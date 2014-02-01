@@ -22,11 +22,10 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 # How to use
 
 - go to http://mediathek.daserste.de, open with iPad User Agent
-- navigate to the desired program, get link to the master.m3u8 file from source
-- run the script with url to the master.m3u8 file as argument (php get_tshls 'http://http://hls.daserste.de/i/videoportal/Film/c_380000/386059/ios.smil/master.m3u8'
-- wait for the script to download all media files, every 10 second part is about 3 MB (when it's done, it will output the runtime)
-- use NullPacketStripper to merge parts
-- convert the *.ts file with eg. handbrake to a *.mp4 file
+- navigate to the desired program, get link to the master.m3u8 file from source (in the <video>-tag)
+- run the script with url to the master.m3u8 file as argument (e.g. php get_tshls 'http://http://hls.daserste.de/i/videoportal/Film/c_380000/386059/ios.smil/master.m3u8'
+- wait for the script to download and merge all media files; every 10 second part is about 3 MB (when it's done, it will output the runtime)
+- if necessary, convert the *.ts file with a media converter eg. handbrake to a *.mp4 file
 - enjoy
 
 */
