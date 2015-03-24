@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<form action="app.php" method="post">
+	<form action="action.php" method="post">
 		<input type="text" name="episode"/>
 		<input type="submit" name="submit" value="submit" />
 	</form>

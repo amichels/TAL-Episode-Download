@@ -53,8 +53,11 @@ function mergeFiles($dirName,$ep) {
 	}
 	
 	//join and remove parts
-	$shellScript = 'cat '.substr($fileList, 1).' >> ep-'.$ep.'.mpeg';
+	$filename = 'ep-'.$ep.'.mpeg';
+	$shellScript = 'cat '.substr($fileList, 1).' >> '.$filename;
 	shell_exec($shellScript);
 	shell_exec("rm -r files");
+
+	echo "<a href='".$filename."' title='download'>Download Episode ".$ep."</a>";
 }
 ?>
